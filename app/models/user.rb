@@ -5,4 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :account
+
+  before_validation :set_account
+
+  def set_account
+    byebug
+    self.build_account
+  end
 end

@@ -1,3 +1,4 @@
 class Account < ApplicationRecord
-  belonge_to :user
+  belongs_to :user
+  has_many :projects
 end

@@ -14,6 +14,8 @@ gem "pg"
 
 gem "devise"
 
+gem 'acts_as_tenant'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
